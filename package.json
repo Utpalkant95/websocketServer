@@ -1,0 +1,20 @@
+{
+  "name": "websocketserverforsnapify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon --exec ts-node src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.5.4"
+  }
+}
