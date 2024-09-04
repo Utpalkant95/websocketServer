@@ -1,19 +1,24 @@
 {
   "name": "websocketserverforsnapify",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "ts-node src/server.ts",
-    "dev": "nodemon --exec ts-node src/server.ts"
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "ts-node": "^10.9.2",
     "ws": "^8.18.0"
   },
   "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.5.12",
+    "nodemon": "^2.0.15",
     "tsc-watch": "^6.2.0",
     "typescript": "^5.5.4"
   }
